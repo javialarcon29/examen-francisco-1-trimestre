@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.section-titulo {
+  text-align: center;
+  margin-top: 50px;
+}
+.section-titulo h1 {
+  margin-bottom: 40px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #002858;
+  padding: 10px 5%;
+  height: 4vh;
+}
+.navbar .item-login {
+  color: white;
+}
+.navbar li {
+  height: 100%;
+}
+.navbar li:hover {
+  background-color: #ffc836;
+  color: #002858;
+}
+.navbar .logo img {
+  height: 50px;
+}
+.navbar .nav-links ul {
+  list-style: none;
+  display: flex;
+}
+.navbar .nav-links ul li {
+  margin-left: 20px;
+}
+.navbar .nav-links ul li a {
+  text-decoration: none;
+  color: white;
+}
+.navbar .nav-links ul li a:hover {
+  color: #ccc;
+}
+@media (max-width: 768px) {
+  .navbar {
+    height: 18vh;
+    flex-direction: column;
+  }
+  .navbar .nav-links {
+    width: 100%;
+  }
+  .navbar .nav-links ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar .nav-links ul li {
+    margin: 10px 0;
+  }
+}
+
+#nueva-entrada {
+  background-color: #002858;
+  width: 40vw;
+  margin: auto;
+  height: 40px;
+  padding: 25px;
+  margin-top: 40px;
+  display: none;
+  cursor: pointer;
+}
+#nueva-entrada h1 {
+  text-align: center;
+  color: #ffc836;
+}
+@media (max-width: 768px) {
+  #nueva-entrada {
+    width: 80vw;
+    padding: 10px;
+    font-size: 12px;
+    height: 55px;
+  }
+}
+
+#contenedor {
+  margin-top: 20px;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#contenedor a {
+  font-size: 14px;
+}
+#contenedor .entrada {
+  flex: 0 0 30%;
+  width: 400px;
+  height: 65vh;
+  color: #002858;
+  font-size: 20px;
+  border: 2px solid black;
+}
+#contenedor .entrada .blog-imagen img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+#contenedor .entrada .blog-contenido {
+  padding: 15px;
+  font-size: 14px;
+}
+#contenedor .entrada .blog-contenido h3 {
+  margin-bottom: 10px;
+}
+#contenedor .entrada:hover {
+  background-color: #002858;
+  color: #ffc836;
+}
+@media (max-width: 768px) {
+  #contenedor {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #contenedor .entrada {
+    height: 45vh;
+    width: 95vw;
+  }
+  #contenedor .entrada .blog-imagen img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+dialog#login_modal,
+dialog#nuevaEntrada_modal {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 30vw;
+  height: 300px;
+  padding: 20px;
+}
+dialog#login_modal .form-item,
+dialog#nuevaEntrada_modal .form-item {
+  margin-top: 20px;
+  display: flex;
+  line-height: 30px;
+}
+dialog#login_modal .form-item label,
+dialog#nuevaEntrada_modal .form-item label {
+  width: 80px;
+  text-align: start;
+  margin-right: 30px;
+}
+dialog#login_modal .form-item input,
+dialog#nuevaEntrada_modal .form-item input {
+  height: 60px;
+  width: 250px;
+}
+dialog#login_modal .buttons-dialog,
+dialog#nuevaEntrada_modal .buttons-dialog {
+  display: flex;
+  text-align: center;
+  margin-top: 30px;
+}
+dialog#login_modal .buttons-dialog button,
+dialog#nuevaEntrada_modal .buttons-dialog button {
+  margin: auto;
+  height: 60px;
+  width: 110px;
+}
+@media (max-width: 768px) {
+  dialog#login_modal,
+  dialog#nuevaEntrada_modal {
+    width: 85vw;
+  }
+}
+
+dialog#nuevaEntrada_modal {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 20vw;
+  height: 100px;
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  dialog#nuevaEntrada_modal {
+    width: 85vw;
+  }
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  margin-top: 50px;
+  text-align: center;
+  background-color: #002858;
+  color: #ffc836;
+  padding: 10px 5%;
+  height: 4vh;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,211 @@
+$azul: #002858;
+$amarillo: #ffc836;
+$blanco: #fff;
+$breakpoint-mobile: 768px;
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+.section-titulo {
+  text-align: center;
+  margin-top: 50px;
+  h1 {
+    margin-bottom: 40px;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $azul;
+  padding: 10px 5%;
+  height: 4vh;
+  .item-login {
+    color: white;
+  }
+  li {
+    height: 100%;
+  }
+  li:hover {
+    background-color: $amarillo;
+    color: $azul;
+  }
+  .logo img {
+    height: 50px;
+  }
+
+  .nav-links {
+    ul {
+      list-style: none;
+      display: flex;
+
+      li {
+        margin-left: 20px;
+
+        a {
+          text-decoration: none;
+          color: white;
+
+          &:hover {
+            color: #ccc;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    height: 18vh;
+    flex-direction: column;
+    .nav-links {
+      width: 100%;
+      ul {
+        flex-direction: column;
+        align-items: center;
+
+        li {
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+}
+#nueva-entrada {
+  background-color: $azul;
+  width: 40vw;
+  margin: auto;
+  height: 40px;
+  padding: 25px;
+  margin-top: 40px;
+  display: none;
+  cursor: pointer;
+  h1 {
+    text-align: center;
+    color: $amarillo;
+  }
+  @media (max-width: $breakpoint-mobile) {
+    width: 80vw;
+    padding: 10px;
+    font-size: 12px;
+    height: 55px;
+  }
+}
+#contenedor {
+  margin-top: 20px;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  a {
+    font-size: 14px;
+  }
+  .entrada {
+    
+    flex: 0 0 30%;
+    
+
+    width: 400px;
+    height: 65vh;
+    color: $azul;
+    font-size: 20px;
+    border: 2px solid black;
+    .blog-imagen img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .blog-contenido {
+      padding: 15px;
+      font-size: 14px;
+      h3 {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .entrada:hover {
+    background-color: $azul;
+    color: $amarillo;
+  }
+  @media (max-width: $breakpoint-mobile) {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .entrada {
+      height: 45vh;
+      width: 95vw;
+      .blog-imagen img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+dialog#login_modal,
+dialog#nuevaEntrada_modal {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 30vw;
+  height: 300px;
+  padding: 20px;
+  .form-item {
+    margin-top: 20px;
+    display: flex;
+    line-height: 30px;
+    label {
+      width: 80px;
+      text-align: start;
+      margin-right: 30px;
+    }
+    input {
+      height: 60px;
+      width: 250px;
+    }
+  }
+  .buttons-dialog {
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+    button {
+      margin: auto;
+      height: 60px;
+      width: 110px;
+    }
+  }
+  @media (max-width: $breakpoint-mobile) {
+    width: 85vw;
+  }
+}
+dialog#nuevaEntrada_modal {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 20vw;
+  height: 100px;
+  padding: 20px;
+  @media (max-width: $breakpoint-mobile) {
+    width: 85vw;
+  }
+}
+footer {
+  position: relative;
+  bottom: 0;
+  margin-top: 50px;
+  text-align: center;
+  background-color: $azul;
+  color: $amarillo;
+  padding: 10px 5%;
+  height: 4vh;
+}

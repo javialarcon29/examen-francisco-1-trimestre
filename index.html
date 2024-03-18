@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examen</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/"
+          ><img
+            src="https://www.cesurformacion.com/uploads/media/logo-small/09/19-19-cesur-fp-v4.svg?v=7-0"
+            alt="Logo"
+        /></a>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="#">Blog</a></li>
+          <li id="item-login"><a href="#">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+    <dialog id="login_modal">
+      <div>
+        <h2>Inicio de Sesión</h2>
+        <form method="dialog">
+          <div class="form-item">
+            <label>Correo electrónico:</label>
+            <input type="email" autocomplete="new-password" name="email" />
+          </div>
+          <div class="form-item">
+            <label>Contraseña:</label>
+            <input
+              type="password"
+              autocomplete="new-password"
+              name="password"
+            />
+          </div>
+          <div class="buttons-dialog">
+            <button id="btnAccederLogin">Acceder</button>
+            <button id="btnCancelarLogin">Cancelar</button>
+          </div>
+        </form>
+      </div>
+    </dialog>
+    <dialog id="nuevaEntrada_modal">
+      <div>
+        <h2>Nueva entrada</h2>
+        <button id="btnCancelarNuevaEntrada">Cancelar</button>
+      </div>
+    </dialog>
+
+    <section class="section-titulo">
+      <h1>Blog de Cesur</h1>
+      <span class="subtitulo"
+        >Conoce toda la actividad en nuestros centros</span
+      >
+    </section>
+    <div id="nueva-entrada">
+      <h1>Añadir nueva entrada de blog</h1>
+    </div>
+    <div id="contenedor">
+     
+    </div>
+
+    <footer>
+      <h3>Examen de recuperación de Desarrollo de Interfaces Web</h3>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
